@@ -555,7 +555,7 @@ def processfontstyle(w) :
         level = i = 0
         while i < len(w):
           special = False
-          for k, v in fontstyle.items():
+          for k, v in list(fontstyle.items()):
             l = len(k)
             if w[i:i+l] == k:
               level += 1
